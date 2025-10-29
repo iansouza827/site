@@ -1,0 +1,114 @@
+@charset 'utf-8';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #092e02, #014606);
+  color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    h1 {
+      color: #ffffff;
+      font-size: 28pt;
+      text-align: center;
+      margin-top: 30px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(0, 255, 100, 0.5);
+    }
+
+    h2 {
+      color: #a6ffb1;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+      color: #f0f0f0;
+    }
+
+    ol {
+      font-size: 1.1rem;
+      color: #e0fbe0;
+      line-height: 1.8;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin: 25px auto;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Destaques para o passo a passo */
+    .passo-box {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-left: 6px solid #00e676;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 25px 0;
+      box-shadow: 0 4px 15px rgba(0, 255, 120, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .passo-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(0, 255, 120, 0.3);
+    }
+
+    .passo-numero {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #00e676;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    /* Responsividade */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 24pt;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p, ol {
+        font-size: 1rem;
+      }
+
+      .passo-box {
+        padding: 18px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 22pt;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p, ol {
+        font-size: 0.95rem;
+      }
+
+      .passo-box {
+        padding: 15px;
+        border-left: 4px solid #00e676;
+      }
+    }
